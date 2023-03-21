@@ -1,0 +1,27 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>Alert Tutorial</title>
+    </head>
+    <body>
+        <button type="button" onclick="alert('Selamat Datang')">contoh</button>
+        <button type="button" id="btn">Login</button>
+    
+        <script src="dist/sweetalert2.all.min.js"></script>
+    
+        <script>
+            const btn = document.getElementById('btn');
+            btn.addEventListener('click', function(){
+                    Swal.fire({
+                        title: 'Selamat Datang',
+                        text: 'Anda Berhasil Login',
+                        icon: 'success',
+                        
+                        })
+            })
+    
+    
+    
+        </script>
+    </body>
+    </html>
